@@ -12,6 +12,10 @@
         @media (min-width: $phone-upper-boundary) {
             @content;
         }
+    } @else if $point == tablet-landscape-up-max {
+        @media (max-width: $tablet-portrait-upper-boundary) {
+            @content;
+        }
     } @else if $point == tablet-landscape-up {
         @media (min-width: $tablet-portrait-upper-boundary) {
             @content;

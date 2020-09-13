@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background-color: #222632;
+  background: linear-gradient(to bottom, #222632, #14171f 40%);
   overflow-x: hidden;
 }
 
@@ -49,7 +49,16 @@ button {
   padding-top: 6px;
   fill: #f0f8ff;
   width: 100%;
-  height: 100o;
+  height: 100%;
+  stroke-width: 10px;
+  stroke: transparent;
+  stroke: #f0f8ff;
+  transition: 500ms;
+  stroke-dasharray: 800;
+}
+.header .header-flex-container .header-link .header-logo:hover svg {
+  filter: drop-shadow(0 10px 10px #0d1321);
+  stroke-dashoffset: 600;
 }
 .header .header-flex-container .header-menu {
   display: none;
@@ -135,4 +144,68 @@ button {
   filter: drop-shadow(0 1px 1px #0d1321);
   border-radius: 8px;
   max-width: 100%;
+}
+
+.section-depositions {
+  padding-top: 60px;
+}
+.section-depositions .section-depositions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.section-depositions .section-depositions .section-depositions-box {
+  position: relative;
+  border-radius: 10px;
+  padding: 16px 27px;
+  padding-right: 70px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+.section-depositions .section-depositions .section-depositions-box * {
+  color: #8d99ae;
+}
+.section-depositions .section-depositions .section-depositions-box h2 {
+  line-height: 22px;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.section-depositions .section-depositions .section-depositions-box h2 i {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  font-size: 50px;
+}
+@media (max-width: 599px) {
+  .section-depositions .section-depositions .section-depositions-box h2 i {
+    top: 20px;
+    font-size: max(8vw, 22px);
+  }
+}
+.section-depositions .section-depositions .section-depositions-box span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  color: #953bb8;
+}
+.section-depositions .section-depositions .section-depositions-box.n {
+  margin-bottom: 27px;
+  margin-right: 20px;
+}
+@media (max-width: 599px) {
+  .section-depositions .section-depositions .section-depositions-box {
+    padding-right: max(12vw, 30px);
+  }
+}
+@media (max-width: 900px) {
+  .section-depositions .section-depositions .section-depositions-box {
+    max-width: 450px;
+    flex-grow: 1;
+  }
+  .section-depositions .section-depositions .section-depositions-box.n {
+    width: 450px;
+    margin-right: 0;
+  }
 }
