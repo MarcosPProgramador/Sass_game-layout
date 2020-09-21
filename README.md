@@ -4,4 +4,9 @@
 
 ![alt](./img/layout.png)
 
-#### Sass, JavaScript, Html
+**Technologies used:**
+- _Sass_
+- _CSS_
+- _JavaScript_
+- _Git_
+
