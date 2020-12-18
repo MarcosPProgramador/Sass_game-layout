@@ -1,12 +1,25 @@
 # Project create by Marcos Proença
 
+## Before you start, download the dependencies | **`yarn`**
+
 ## Preview
 
-![alt](./img/layout.png)
+-   desktop
+
+    ![layout-desktop](./public/img/layout-desktop.png)
+
+-   mobile
+
+
+    ![layout-mobile](./public/img/layout-mobile.png)
 
 **Technologies used:**
-- _Sass_
-- _CSS_
-- _JavaScript_
-- _Git_
+-   HTML
+-   CSS
+-   Sass
+-   JavaScript
+-   TypeScript
+-   git
+-   yarn
 
+### Front-end

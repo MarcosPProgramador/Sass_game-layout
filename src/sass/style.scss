@@ -1,12 +1,12 @@
-@import "./breakpoint";
-@import "./variables";
+@import './breakpoint';
+@import './variables';
 * {
     margin: 0;
     padding: 0;
     outline: 0;
     appearance: none;
     box-sizing: border-box;
-    font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: $text;
 }
 *::-webkit-scrollbar {
@@ -244,7 +244,7 @@ button {
 
                 margin-bottom: 16px;
                 @include breakpoint(phone-only) {
-                    font-size: max(6vw, 16px);
+                    font-size: #{'max(6vw, 16px)'};
                 }
             }
             p {
@@ -259,7 +259,7 @@ button {
                     text-decoration: none;
                     img {
                         @include breakpoint(phone-only) {
-                            width: max(25vw, 100px);
+                            width: #{'max(25vw, 100px)'};
                         }
                     }
                 }
@@ -305,7 +305,7 @@ button {
                     font-size: 50px;
                     @include breakpoint(phone-only) {
                         top: 20px;
-                        font-size: max(8vw, 22px);
+                        font-size: #{'max(8vw, 22px)'};
                     }
                 }
             }
@@ -321,7 +321,7 @@ button {
                 margin-right: 20px;
             }
             @include breakpoint(phone-only) {
-                padding-right: max(12vw, 30px);
+                padding-right: #{'max(12vw, 30px)'};
             }
             @include breakpoint(tablet-landscape-up-max) {
                 max-width: 450px;
